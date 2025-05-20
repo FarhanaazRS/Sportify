@@ -62,26 +62,6 @@
 - MongoDB
 - npm or yarn package manager
 
----
-
-### 📥 Installation Steps
-
-#### 1. Clone the Repository
-```bash
-git clone https://github.com/RaafidAfraazG/SportsFiesta.git
-```
-
-#### 2. Install Frontend Dependencies
-```bash
-cd SportsFiesta/frontend
-npm install
-```
-
-#### 3. Install Backend Dependencies
-```bash
-cd ../backend
-npm install
-```
 
 ---
 
