@@ -1,6 +1,6 @@
 # SportsFiesta 🏆
 
-**SportsFiesta** is a full-stack web application designed for managing corporate sports tournaments and events. It provides powerful tools for organizing events, team registrations, real-time scoring, and dynamic leaderboards.
+**SportsFiesta** is a full-stack web application designed for managing corporate sports tournaments and events. It provides powerful tools for organizing events, team registrations, real-time scoring, and dynamic l
 
 ---
 
