@@ -1,160 +1,151 @@
-# SportsFiesta 🏆
+# 🏆 SportsFiesta – Corporate Sports Tournament Manager
 
-**SportsFiesta** is a full-stack web application designed for managing corporate sports tournaments and events. It provides powerful tools for organizing events, team registrations, real-time scoring, and dynamic l
+**SportsFiesta** is a robust full-stack web platform tailored for managing corporate sports tournaments. It streamlines event creation, team registrations, live scoring, and leaderboard tracking – all from a user-friendly interface.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
 ### 🔐 Authentication & Authorization
-- Secure **JWT-based** authentication
-- **Role-based access control** (Admin, Judge, Participant)
-- Context-based auth handling in frontend (`AuthContext.js`)
+- Secure authentication using **JWT**
+- **Role-based access**: Admin, Judge, Participant
+- Centralized auth management via `AuthContext.js`
 
-### 🏁 Event Management
-- Admin can create and manage events
-- Events categorized as Indoor, Outdoor, or Fun
-- Registration limits and event capacities
-- Event details with descriptions and media
+### 🏟️ Event Management
+- Admins can create & categorize events: Indoor, Outdoor, Fun
+- Define participant limits and capacity
+- Add event descriptions and multimedia
 
 ### 🧑‍🤝‍🧑 Team Registration
-- Smooth registration flow
-- Live status updates
-- Dashboard for team tracking
+- Seamless registration experience
+- Real-time team status tracking
+- Team dashboard with updates
 
-### 🧮 Real-time Scoring
-- Judges can input scores
-- Live updates via **Socket.io**
-- Automatic leaderboard updates
+### 🧮 Live Scoring System
+- Judges input scores in real-time
+- **Socket.io** enables instant updates
+- Dynamic leaderboard refresh
 
-### 📊 Leaderboards & Visualization
-- Event-specific leaderboards
-- **Chart.js** for real-time data visualization
+### 📊 Leaderboard & Visual Insights
+- Per-event leaderboards
+- Live data visualization using **Chart.js**
 
-### 🤖 AI-Powered Event Suggestions
+### 🤖 AI-Powered Event Assistant
 - Integrated with **Gemini AI**
-- Suggests event ideas & auto-generates event details
+- Generates event ideas and descriptions intelligently
 
 ---
 
 ## 🧱 Tech Stack
 
 ### ⚙️ Backend
-- Node.js + Express.js
-- MongoDB
-- JWT Auth
-- Socket.io
-- PDFKit
+- Node.js with Express.js
+- MongoDB (NoSQL)
+- JWT for authentication
+- **Socket.io** for real-time events
+- PDFKit for downloadable content
 
 ### 💻 Frontend
 - React.js
-- Tailwind CSS
-- Framer Motion
+- Tailwind CSS for UI
+- Framer Motion for animations
 - Socket.io Client
-- Chart.js
-- Google Generative AI API
+- Chart.js for data visualization
+- Gemini API for AI suggestions
 
 ---
 
----
+## 🛠 Setup & Installation
 
-## 🛠 Getting Started
-
-### 📦 Prerequisites
-- Node.js (v14+)
+### 📦 Requirements
+- Node.js (v14 or newer)
 - MongoDB
-- npm or yarn
+- npm or yarn package manager
 
-### 📥 Installation
+---
+
+### 📥 Installation Steps
 
 #### 1. Clone the Repository
 ```bash
 git clone https://github.com/RaafidAfraazG/SportsFiesta.git
 ```
-### 2. Install Frontend Dependencies
-```
+
+#### 2. Install Frontend Dependencies
+```bash
 cd SportsFiesta/frontend
 npm install
 ```
 
-### 3. Install Backend Dependencies
-```
+#### 3. Install Backend Dependencies
+```bash
 cd ../backend
 npm install
 ```
 
-## 🌍 Environment Variables
-
-Create .env files in both frontend/ and backend/ folders.
 ---
-frontend/.env
-```
+
+## 🌐 Environment Variables Setup
+
+Create `.env` files in both the `frontend/` and `backend/` directories.
+
+### frontend/.env
+```env
 REACT_APP_API_URL=http://localhost:5000
 REACT_APP_SOCKET_URL=http://localhost:5000
 REACT_APP_GEMINI_API_KEY=your_gemini_api_key
-
 ```
-backend/.env
 
-```
+### backend/.env
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
-
 ```
-
-## ▶️ Running the Project
-
-Start Backend Server
-```
-cd backend
-npm start
-
-```
-
-Start Frontend Server
-```
-cd frontend
-npm start
-
-```
-
-## 📚 API Documentation
-
-### 🔑 Authentication
-- `POST /api/auth/register` — Register a user  
-- `POST /api/auth/login` — Login
-
-### 🏆 Events
-- `GET /api/events` — Get all events  
-- `POST /api/events` — Create new event (Admin)  
-- `GET /api/events/:id` — Get event by ID  
-- `PUT /api/events/:id` — Update event (Admin)  
-- `DELETE /api/events/:id` — Delete event (Admin)
-
-### 👥 Teams
-- `POST /api/teams` — Register a team  
-- `GET /api/teams` — View registered teams
-
-### 🧮 Scores
-- `POST /api/scores` — Submit score (Judge)  
-- `GET /api/scores/:eventId` — Get scores for event  
-- `GET /api/scores/leaderboard/:eventId` — Get leaderboard
 
 ---
 
-## 📸 Screenshots 
+## ▶️ Running the App
 
+### Start the Backend Server
+```bash
+cd backend
+npm start
+```
 
-<img width="958" alt="image" src="https://github.com/user-attachments/assets/bd0f96a0-e8fd-490b-9f17-13868ab749fc" />
+### Start the Frontend Server
+```bash
+cd frontend
+npm start
+```
 
+---
 
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/483e97a2-2d72-47c9-bc99-27f216492073" />
+## 📚 API Endpoints
 
+### 🔑 Authentication
+- `POST /api/auth/register` – User registration  
+- `POST /api/auth/login` – User login
 
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/ea12eb4a-c3f3-44da-8b14-db410fde8919" />
+### 🏆 Event Management
+- `GET /api/events` – Fetch all events  
+- `POST /api/events` – Create event (Admin only)  
+- `GET /api/events/:id` – Get specific event  
+- `PUT /api/events/:id` – Update event (Admin)  
+- `DELETE /api/events/:id` – Delete event (Admin)
 
+### 👥 Team Management
+- `POST /api/teams` – Register a team  
+- `GET /api/teams` – Get all registered teams
 
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/c8f191a6-809e-426e-8a3c-422f816377fb" />
+### 🧮 Scoring System
+- `POST /api/scores` – Submit score (Judge only)  
+- `GET /api/scores/:eventId` – Get event scores  
+- `GET /api/scores/leaderboard/:eventId` – Fetch leaderboard
+
+---
+
+> 🎉 Ready to host your own sports tournament? Fork this project and get started!
+
 
 
