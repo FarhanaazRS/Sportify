@@ -1,6 +1,6 @@
-# 🏆 SportsFiesta – Corporate Sports Tournament Manager
+# 🏆 Sportify – Corporate Sports Tournament Manager
 
-**SportsFiesta** is a robust full-stack web platform tailored for managing corporate sports tournaments. It streamlines event creation, team registrations, live scoring, and leaderboard tracking – all from a user-friendly interface.
+**Sportify** is a robust full-stack web platform tailored for managing corporate sports tournaments. It streamlines event creation, team registrations, live scoring, and leaderboard tracking – all from a user-friendly interface.
 
 ---
 
